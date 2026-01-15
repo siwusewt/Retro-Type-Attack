@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Retro Type Attack</title>
+</head>
+<body>
+    <div class="container">
+        <div class="arcade-border">
+            <h1>TYPE ATTACK</h1>
+            
+            <div class="stats">
+                <div class="stat">SCORE<br><span id="score">00000</span></div>
+                <div class="stat">TIME<br><span id="time">60</span>s</div>
+                <div class="stat">STREAK<br><span id="streak">00</span></div>
+            </div>
+
+            <div class="word-display" id="wordDisplay">PRESS START</div>
+
+            <div class="input-area">
+                <input type="text" id="inputField" placeholder="TYPE HERE..." disabled>
+            </div>
+
+            <div class="message" id="message"></div>
+
+            <div class="buttons">
+                <button id="startBtn">START</button>
+                <button id="resetBtn" disabled>RESET</button>
+            </div>
+
+            <div class="insert-coin">INSERT COIN</div>
+
+            <div class="game-over" id="gameOver">
+                <h2>GAME OVER</h2>
+                <div class="final-score">SCORE: <span id="finalScore">00000</span></div>
+                <p>WORDS TYPED: <span id="wordsTyped">00</span></p>
+                <p>BEST STREAK: <span id="bestStreak">00</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./game.js"></script>
+</body>
+</html>
